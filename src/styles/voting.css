@@ -1,0 +1,42 @@
+#voting-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.smiley-container {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.smiley {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.vote-count {
+    color: #ffb629;
+    margin-top: 5px;
+}
+
+.winner {
+    font-size: 2em;
+    margin-top: 20px;
+    display: none;
+}
+
+#show-results {
+    padding: 10px;
+    cursor: pointer;
+    color: #ffb629;
+    border: 1px  solid #ffb629;
+    border-radius: 15px ;
+    background-color: #232323;
+    box-shadow:  0 0 15px rgb(255, 182, 41);
+    transition: all .5s;
+}
+
+#show-results:hover {
+    box-shadow:  0 0 20px rgb(255, 182, 41);
+}
