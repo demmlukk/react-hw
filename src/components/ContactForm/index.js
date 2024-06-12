@@ -7,7 +7,7 @@ const ContactForm = ({ onSave, onCancel }) => {
     const [surname, setSurname] = useState('');
     const [phone, setPhone] = useState('');
 
-    const handleSubmi  = (e) => {
+    const handleSubmit  = (e) => {
         e.preventDefault();
         const newContact = {
             id: Date.now(),
