@@ -1,0 +1,106 @@
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.84);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.contact .user {
+    position: relative;
+}
+
+.contact .user input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.contact .user label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.contact .user input:focus ~ label,
+.contact .user input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.contact form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 18px;
+    background-color: #6f8f96;
+    color: white;
+    border: 2px;
+    border-radius: 5px ;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: rgba(3, 233, 244, 0.75);
+}
+
+.btn_cancel {
+    padding: 10px 18px;
+    background-color: rgba(255, 0, 0, 0.4);    color: white;
+    border: 2px;
+    border-radius: 5px ;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.btn_cancel:hover {
+    background-color: rgba(255, 0, 0, 0.75);
+}
