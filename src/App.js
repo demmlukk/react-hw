@@ -1,14 +1,19 @@
+import {Routes, Route} from 'react-router-dom';
 import './App.css';
-import Header from "./components/Header";
-import LeftSidebar from "./components/LeftSidebar";
-import MainContainer from "./components/MainContainer";
+
+import AlbumList from "./components/AlbumList";
+import PhotoList from "./components/PhotoList";
+import UserList from "./components/UserList";
+
 function App() {
   return (
-    <div className='main-wrapper'>
-        <Header/>
-        <LeftSidebar/>
-        <MainContainer/>
-    </div>
+      <div className="app-container">
+          <Routes>
+              <Route path='/' element={<UserList/>}/>
+              <Route path='/user/:userId/albums' element={<AlbumList/>}/>
+              <Route path='/album/:albumId/photos' element={<PhotoList/>}/>
+          </Routes>
+      </div>
   );
 }
 
